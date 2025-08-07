@@ -338,10 +338,10 @@ body {
 
 .instagram-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     width: 100%;
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -352,10 +352,10 @@ body {
 }
 
 .instagram-post .instagram-media {
-    max-width: 240px !important;
-    min-width: 200px !important;
-    width: 240px !important;
-    transform: scale(0.8);
+    max-width: 280px !important;
+    min-width: 220px !important;
+    width: 280px !important;
+    transform: scale(0.85);
     transform-origin: center;
 }
 
@@ -518,14 +518,14 @@ body {
     /* Instagram responsive */
     .instagram-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 15px;
     }
     
     .instagram-post .instagram-media {
-        max-width: 180px !important;
-        min-width: 160px !important;
-        width: 180px !important;
-        transform: scale(0.7);
+        max-width: 200px !important;
+        min-width: 180px !important;
+        width: 200px !important;
+        transform: scale(0.75);
     }
 }
 
