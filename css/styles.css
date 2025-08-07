@@ -564,10 +564,15 @@ body {
         height: 35px;
     }
     
-    /* Instagram mobile responsive */
+    /* Instagram mobile responsive - show only first post */
     .instagram-grid {
         grid-template-columns: 1fr;
         gap: 15px;
+    }
+    
+    .instagram-post:nth-child(2),
+    .instagram-post:nth-child(3) {
+        display: none;
     }
     
     .instagram-post .instagram-media {
@@ -590,31 +595,6 @@ body {
     
     .footer-logo {
         max-width: 120px;
-    }
-    
-    .instagram-link {
-        font-size: 20px;
-        padding: 15px 20px;
-        gap: 10px;
-    }
-    
-    .instagram-icon {
-        width: 30px;
-        height: 30px;
-    }
-    
-    .instagram-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-    
-    .instagram-post .instagram-media {
-        min-width: 100% !important;
-    }
-
-    .instagram-feed {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 15px;
     }
 }
 
