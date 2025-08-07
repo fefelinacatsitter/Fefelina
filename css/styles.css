@@ -149,9 +149,10 @@ body {
 .service-item img {
     max-width: 150px;
     height: auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
     border-radius: 10px;
     transition: transform 0.3s ease;
+    display: block;
 }
 
 .service-item img:hover {
@@ -250,6 +251,8 @@ body {
     max-width: 150px;
     height: auto;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    align-self: flex-start;
+    margin-top: -10px;
 }
 
 .brand-info {
