@@ -479,11 +479,15 @@ body {
     
     .about-image {
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .about-image img {
         margin: 0 auto;
         display: block;
+        text-align: center;
     }
     
     .services-grid {
@@ -645,4 +649,125 @@ a:focus,
 button:focus {
     outline: 2px solid #e28e60;
     outline-offset: 2px;
+}
+
+/* Safari-specific styles */
+@supports (-webkit-appearance: none) {
+    /* Fix for about image centering in Safari */
+    .about-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-image img {
+        margin: 0 auto !important;
+        text-align: center;
+        align-self: center;
+    }
+    
+    /* Safari Instagram icon fix */
+    .instagram-icon {
+        width: 28px !important;
+        height: 28px !important;
+        flex-shrink: 0;
+    }
+    
+    /* Safari mobile specific fixes */
+    @media (max-width: 480px) {
+        .instagram-icon {
+            width: 20px !important;
+            height: 20px !important;
+        }
+        
+        .instagram-link {
+            font-size: 14px !important;
+            padding: 8px 15px !important;
+            gap: 6px !important;
+        }
+    }
+    
+    /* Extra small screens Safari fixes */
+    @media (max-width: 375px) {
+        .instagram-icon {
+            width: 18px !important;
+            height: 18px !important;
+        }
+        
+        .instagram-link {
+            font-size: 12px !important;
+            padding: 6px 12px !important;
+            gap: 4px !important;
+        }
+    }
+}
+
+/* WebKit-specific styles (Safari and Chrome on iOS) */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .about-image {
+        text-align: center !important;
+        display: block !important;
+    }
+    
+    .about-image img {
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+/* iOS Safari specific fixes */
+@supports (-webkit-touch-callout: none) {
+    /* This targets iOS Safari specifically */
+    .about-section .about-content {
+        display: block !important;
+    }
+    
+    .about-image {
+        width: 100% !important;
+        text-align: center !important;
+        margin-bottom: 20px;
+    }
+    
+    .about-image img {
+        max-width: 350px !important;
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+    
+    /* iOS Safari Instagram fixes */
+    .instagram-link {
+        -webkit-appearance: none;
+        appearance: none;
+        display: -webkit-inline-flex !important;
+        display: inline-flex !important;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    
+    .instagram-icon {
+        -webkit-flex-shrink: 0;
+        flex-shrink: 0;
+        display: block !important;
+    }
+    
+    /* Mobile iOS Safari */
+    @media (max-width: 480px) {
+        .about-content {
+            display: block !important;
+            grid-template-columns: none !important;
+        }
+        
+        .instagram-icon {
+            width: 18px !important;
+            height: 18px !important;
+        }
+        
+        .instagram-link {
+            font-size: 13px !important;
+            padding: 6px 12px !important;
+        }
+    }
 }
