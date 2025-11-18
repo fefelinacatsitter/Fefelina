@@ -71,7 +71,7 @@ body {
 /* Section Dividers */
 .section-divider {
     height: 4px;
-    background: linear-gradient(90deg, transparent, #e28e60, transparent);
+    background: linear-gradient(90deg, transparent, #7f50c6, transparent);
     margin: 0 auto;
     width: 80%;
     max-width: 400px;
