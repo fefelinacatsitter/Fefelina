@@ -665,6 +665,10 @@ body {
     .social-badge {
         padding: 8px 0;
     }
+
+    .social-badge-content {
+        justify-content: center;
+    }
     
     .social-badge-text {
         font-size: 12px;
