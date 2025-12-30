@@ -2,8 +2,28 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Load Instagram feed
-    loadInstagramFeed();
+    // FAQ Accordion functionality - PRIORIDADE
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', function(e) {
+            e.preventDefault();
+            const faqItem = this.parentElement;
+            const isActive = faqItem.classList.contains('active');
+            
+            // Close all other FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+                item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+            });
+            
+            // Toggle current item
+            if (!isActive) {
+                faqItem.classList.add('active');
+                this.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
     
     // Add hover effect to service items
     const serviceItems = document.querySelectorAll('.service-item');
@@ -98,6 +118,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Load Instagram feed on page load
-    loadInstagramFeed();
 });
