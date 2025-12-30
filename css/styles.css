@@ -34,6 +34,55 @@ body {
     padding: 0 20px;
 }
 
+/* Social Media Badge */
+.social-badge {
+    background: #f8f9fa;
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.social-badge-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.social-badge-text {
+    color: #666;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.social-badge-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-badge-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border-radius: 50%;
+    color: #7f50c6;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-badge-link:hover {
+    background: rgba(127, 80, 198, 0.1);
+    transform: scale(1.1);
+    color: #e28e60;
+}
+
+.social-badge-link svg {
+    width: 18px;
+    height: 18px;
+}
+
 /* Header Styles */
 .header {
     height: 50vh;
@@ -590,6 +639,10 @@ body {
         gap: 25px;
     }
     
+    .social-badge-text {
+        font-size: 13px;
+    }
+    
     .faq-question {
         font-size: 15px;
         padding: 18px 20px;
@@ -607,6 +660,28 @@ body {
     
     .header-logo {
         max-width: 250px;
+    }
+    
+    .social-badge {
+        padding: 8px 0;
+    }
+    
+    .social-badge-text {
+        font-size: 12px;
+    }
+    
+    .social-badge-icons {
+        gap: 8px;
+    }
+    
+    .social-badge-link {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .social-badge-link svg {
+        width: 16px;
+        height: 16px;
     }
     
     .faq-container {
