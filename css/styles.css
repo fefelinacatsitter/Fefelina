@@ -677,6 +677,17 @@ body {
         gap: 20px;
     }
     
+    .footer-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-logo {
+        margin: 0 auto;
+        display: block;
+    }
+    
     .social-icons {
         justify-content: center;
     }
