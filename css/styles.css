@@ -465,6 +465,48 @@ body {
     color: #666;
 }
 
+/* Payment Methods */
+.payment-methods {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px 0;
+    flex-wrap: wrap;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.payment-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+}
+
+.payment-badges {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.payment-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 5px 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+    cursor: default;
+    min-height: 36px;
+}
+
+.payment-badge:hover {
+    transform: scale(1.12);
+}
+
 /* Instagram Section */
 .instagram-section {
     background-color: #f8f9fa;
