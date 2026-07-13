@@ -468,11 +468,14 @@ body {
 /* Payment Methods */
 .payment-methods {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 10px;
     padding: 16px 0;
     flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -488,6 +491,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 
 .payment-badge {
