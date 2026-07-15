@@ -240,6 +240,131 @@ body {
     text-align: center;
 }
 
+.reviews-summary {
+    margin-bottom: 40px;
+}
+
+.reviews-summary-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.reviews-summary-score {
+    font-size: 32px;
+    font-weight: 600;
+    color: #e28e60;
+}
+
+.reviews-summary-count {
+    margin-top: 8px;
+    color: #666;
+    font-size: 14px;
+}
+
+.reviews-summary-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #7f50c6;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.reviews-summary-link:hover {
+    color: #e28e60;
+    text-decoration: underline;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    text-align: left;
+}
+
+.review-card {
+    padding: 25px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.review-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(226, 142, 96, 0.15);
+    border-color: #e28e60;
+}
+
+.review-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.review-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.review-author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-author-name {
+    font-weight: 600;
+    color: #333;
+    font-size: 15px;
+}
+
+.review-local-guide {
+    font-size: 12px;
+    color: #7f50c6;
+}
+
+.review-stars {
+    color: #e28e60;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.review-date {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.review-text {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.reviews-fallback {
+    color: #666;
+    font-size: 14px;
+}
+
+.reviews-fallback a {
+    color: #7f50c6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.reviews-fallback a:hover {
+    color: #e28e60;
+    text-decoration: underline;
+}
+
 /* FAQ Section */
 .faq-section {
     background-color: #fff;

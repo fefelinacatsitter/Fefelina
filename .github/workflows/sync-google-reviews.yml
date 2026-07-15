@@ -1,0 +1,41 @@
+name: Sincronizar avaliações do Google
+
+# Disparo apenas manual (botão "Run workflow" na aba Actions).
+# Caso queira automatizar no futuro, basta descomentar o bloco `schedule` abaixo.
+on:
+  workflow_dispatch: {}
+  # schedule:
+  #   - cron: '0 6 * * 1' # toda segunda-feira às 06:00 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  sync-reviews:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Buscar avaliações na SerpApi
+        env:
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
+          GOOGLE_DATA_ID: ${{ secrets.GOOGLE_DATA_ID }}
+        run: node scripts/fetch-google-reviews.js
+
+      - name: Commitar alterações (se houver)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/reviews.json; then
+            echo "Nenhuma mudança nas avaliações. Nada para commitar."
+          else
+            git add data/reviews.json
+            git commit -m "chore: sincroniza avaliações do Google [skip ci]"
+            git push
+          fi
