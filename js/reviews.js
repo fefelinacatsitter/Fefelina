@@ -1,5 +1,9 @@
 // Fefelina Catsitter - Avaliações do Google (dados sincronizados via GitHub Actions + SerpApi)
 
+// Links oficiais do Google Business Profile da Fefelina (não sensíveis, uso público).
+const GOOGLE_WRITE_REVIEW_URL = 'https://g.page/r/CeJCpmNd9R5rEBE/review';
+const GOOGLE_PROFILE_URL = 'https://maps.app.goo.gl/xzk9pYpY41WwFcgj9';
+
 document.addEventListener('DOMContentLoaded', function () {
     const summaryContainer = document.getElementById('google-reviews-summary');
     const gridContainer = document.getElementById('google-reviews-grid');
@@ -72,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
             scoreEl.textContent = place.rating.toFixed(1);
 
             const starsEl = document.createElement('span');
-            starsEl.className = 'review-stars';
+            starsEl.className = 'reviews-summary-stars';
             starsEl.textContent = starsForRating(place.rating);
             starsEl.setAttribute('aria-hidden', 'true');
 
@@ -88,15 +92,26 @@ document.addEventListener('DOMContentLoaded', function () {
             summaryContainer.appendChild(countEl);
         }
 
-        if (place.mapsUrl) {
-            const linkEl = document.createElement('a');
-            linkEl.className = 'reviews-summary-link';
-            linkEl.href = place.mapsUrl;
-            linkEl.target = '_blank';
-            linkEl.rel = 'noopener';
-            linkEl.textContent = 'Ver todas as avaliações no Google';
-            summaryContainer.appendChild(linkEl);
-        }
+        const ctaEl = document.createElement('div');
+        ctaEl.className = 'reviews-cta';
+
+        const writeReviewLink = document.createElement('a');
+        writeReviewLink.className = 'reviews-cta-button reviews-cta-button--primary';
+        writeReviewLink.href = GOOGLE_WRITE_REVIEW_URL;
+        writeReviewLink.target = '_blank';
+        writeReviewLink.rel = 'noopener';
+        writeReviewLink.textContent = 'Avaliar no Google';
+        ctaEl.appendChild(writeReviewLink);
+
+        const viewProfileLink = document.createElement('a');
+        viewProfileLink.className = 'reviews-cta-button reviews-cta-button--secondary';
+        viewProfileLink.href = place.mapsUrl || GOOGLE_PROFILE_URL;
+        viewProfileLink.target = '_blank';
+        viewProfileLink.rel = 'noopener';
+        viewProfileLink.textContent = 'Ver no Google';
+        ctaEl.appendChild(viewProfileLink);
+
+        summaryContainer.appendChild(ctaEl);
     }
 
     function renderReviews(reviews) {
