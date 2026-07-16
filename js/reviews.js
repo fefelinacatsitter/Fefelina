@@ -4,9 +4,25 @@ document.addEventListener('DOMContentLoaded', function () {
     const summaryContainer = document.getElementById('google-reviews-summary');
     const gridContainer = document.getElementById('google-reviews-grid');
     const fallbackMessage = document.getElementById('google-reviews-fallback');
+    const prevButton = document.querySelector('.reviews-nav-prev');
+    const nextButton = document.querySelector('.reviews-nav-next');
 
     if (!gridContainer) {
         return;
+    }
+
+    if (prevButton) {
+        prevButton.addEventListener('click', function () {
+            scrollByCard(-1);
+        });
+    }
+    if (nextButton) {
+        nextButton.addEventListener('click', function () {
+            scrollByCard(1);
+        });
+    }
+    if (gridContainer) {
+        gridContainer.addEventListener('scroll', updateNavState);
     }
 
     fetch('data/reviews.json', { cache: 'no-store' })
@@ -24,6 +40,21 @@ document.addEventListener('DOMContentLoaded', function () {
             console.warn('Avaliações do Google indisponíveis:', error);
             showFallback();
         });
+
+    function scrollByCard(direction) {
+        const card = gridContainer.querySelector('.review-card');
+        const step = card ? card.getBoundingClientRect().width + 25 : gridContainer.clientWidth;
+        gridContainer.scrollBy({ left: step * direction, behavior: 'smooth' });
+    }
+
+    function updateNavState() {
+        if (!prevButton || !nextButton) {
+            return;
+        }
+        const maxScrollLeft = gridContainer.scrollWidth - gridContainer.clientWidth - 1;
+        prevButton.disabled = gridContainer.scrollLeft <= 0;
+        nextButton.disabled = gridContainer.scrollLeft >= maxScrollLeft;
+    }
 
     function renderSummary(place) {
         if (!summaryContainer || !place) {
@@ -79,6 +110,8 @@ document.addEventListener('DOMContentLoaded', function () {
         reviews.forEach(function (review) {
             gridContainer.appendChild(buildReviewCard(review));
         });
+
+        updateNavState();
     }
 
     function buildReviewCard(review) {
@@ -153,6 +186,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         if (fallbackMessage) {
             fallbackMessage.hidden = false;
+        }
+        if (prevButton) {
+            prevButton.disabled = true;
+        }
+        if (nextButton) {
+            nextButton.disabled = true;
         }
     }
 });
