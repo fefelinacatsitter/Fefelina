@@ -1,14 +1,25 @@
 {
-  "updatedAt": "2026-07-16T11:16:33.529Z",
+  "updatedAt": "2026-07-16T18:15:28.747Z",
   "place": {
     "name": "Fefelina Cat Sitter",
     "address": "R. Joinville, 699 - Vila Nova, Blumenau - SC, 89035-200, Brasil",
     "rating": 5,
-    "totalReviews": 29,
+    "totalReviews": 30,
     "type": "Babá de animais de estimação",
     "mapsUrl": "https://www.google.com/maps/place/data=!4m7!3m6!1s0xa4c378cb5df94505:0x6b1ef55d63a642e2!5m2!4m1!1i2!9m1!1b1?hl=pt-BR"
   },
   "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2sxNlFsbEJaV1pHZEZwSmRGTXRPRWsyYUU5RVQzYxAB",
+      "author": "Edi Corrêa",
+      "authorPhoto": "https://lh3.googleusercontent.com/a-/ALV-UjW5chYvUS3TFUZvm1dXAbV1YZR_hohTIsRlfq__W7T55ZKY6CY=s120-c-rp-mo-br100",
+      "authorLink": "https://www.google.com/maps/contrib/114759227879298372223?hl=pt-BR",
+      "isLocalGuide": true,
+      "rating": 5,
+      "relativeDate": "4 horas atrás",
+      "text": "A Fê é muito dedicada e cuidou muito bem do Brownie e do Nico, mesmo o Nico sendo super medroso com as pessoas, ele interagiu bastante com ela. Tenho total confiança de deixar meus gatinhos sob o cuidado dela :D",
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxNlFsbEJaV1pHZEZwSmRGTXRPRWsyYUU5RVQzYxAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOk16QllBZWZGdFpJdFMtOEk2aE9ET3c%7C%7C?hl=pt-BR"
+    },
     {
       "id": "Ci9DQUlRQUNvZENodHljRjlvT21aT1NuazFOMmg2U0dVdFgxSlpNbGN5VWpSbWNFRRAB",
       "author": "Layna Rhode",
@@ -85,17 +96,6 @@
       "relativeDate": "5 meses atrás",
       "text": "A tia Fe e o tio André cuidaram dos meus 6 gatinhos enquanto viajávamos e não poderíamos ter feito escolha melhor! Extremamente atenciosos, cuidadosos e carinhosos com cada um deles.\n\nDesde o primeiro contato demonstraram muito profissionalismo e carinho pelos animais. Durante a viagem, nos manteviveram sempre informados com mensagens, fotos e vídeos, o que nos deixou muito tranquilos.\n\nPercebe-se que realmente amam o que fazem. Cuidaram de cada detalhe, respeitando as necessidades e personalidades diferentes dos meus seis gatinhos. Voltamos para casa e encontramos todos bem, felizes e muito bem cuidados.\n\nRecomendo de olhos fechados! 💛🐾",
       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201S09UbDJhakpGYkU5aFQxZEZRMVl6TmpOTFlYYxAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOm5KOTl2ajJFbE9hT1dFQ1YzNjNLYXc%7C%7C?hl=pt-BR"
-    },
-    {
-      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s1SVVVVTRSbU5WV1RkdWEyNXJSV1JSTkRaNFVIYxAB",
-      "author": "Camila Dellagiustina",
-      "authorPhoto": "https://lh3.googleusercontent.com/a/ACg8ocKaRMH88VTRqWwDyZ9o2NcWbGwOif14j3smQJS1yL1tCEyPsA=s120-c-rp-mo-br100",
-      "authorLink": "https://www.google.com/maps/contrib/116229559525426189891?hl=pt-BR",
-      "isLocalGuide": true,
-      "rating": 5,
-      "relativeDate": "5 meses atrás",
-      "text": "A experiência foi incrível. Tia Fê e o Tio André são gentis, calmos e muito carinhos com nossos miaus. Percebemos o cuidado que eles têm para tirar a tensão dos gatinhos, foram pacientes, respeitando o tempo de aproximação deles, sempre brincando em cada visita, tendo cuidado para manter a higiene e a alimentação de acordo com as recomendações. Adoramos o serviço-cuidado prestado.",
-      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1SVVVVTRSbU5WV1RkdWEyNXJSV1JSTkRaNFVIYxAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOk5IUUU4RmNVWTdua25rRWRRNDZ4UHc%7C%7C?hl=pt-BR"
     },
     {
       "id": "Ci9DQUlRQUNvZENodHljRjlvT21WRGMxWnVXVlZHVlVsa1dqTTRlbEJFUjJsYVRuYxAB",
