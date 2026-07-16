@@ -170,6 +170,21 @@ document.addEventListener('DOMContentLoaded', function () {
             text.className = 'review-text';
             text.textContent = review.text;
             card.appendChild(text);
+
+            // Texto longo pode ultrapassar o card compacto (quase quadrado);
+            // usamos um limite de caracteres como heurística para decidir
+            // se vale a pena mostrar o botão de expandir.
+            if (review.text.length > 130) {
+                const toggle = document.createElement('button');
+                toggle.type = 'button';
+                toggle.className = 'review-toggle';
+                toggle.textContent = 'Ver mais';
+                toggle.addEventListener('click', function () {
+                    const expanded = card.classList.toggle('expanded');
+                    toggle.textContent = expanded ? 'Ver menos' : 'Ver mais';
+                });
+                card.appendChild(toggle);
+            }
         }
 
         return card;
