@@ -86,10 +86,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (typeof place.totalReviews === 'number') {
-            const countEl = document.createElement('p');
+            const countEl = document.createElement('span');
             countEl.className = 'reviews-summary-count';
-            countEl.textContent = place.totalReviews + ' avaliações no Google';
-            summaryContainer.appendChild(countEl);
+            countEl.textContent = '(' + place.totalReviews + ' avaliações)';
+            const ratingEl = summaryContainer.querySelector('.reviews-summary-rating');
+            if (ratingEl) {
+                ratingEl.appendChild(countEl);
+            } else {
+                summaryContainer.appendChild(countEl);
+            }
         }
 
         const ctaEl = document.createElement('div');
