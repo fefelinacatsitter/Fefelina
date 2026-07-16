@@ -210,8 +210,12 @@
     <section class="reviews-section section" id="avaliacoes">
         <div class="container">
             <h2 class="section-title">O que nossos clientes estão falando</h2>
-            <div id="reviews-widget-185"></div>
-            <script src="https://app.reviewconnect.me/embed/S18iLwoJ6VXH2aXH54BvdB7LkLnBnaYn/widget.js" async></script>
+            <div id="google-reviews-summary" class="reviews-summary"></div>
+            <div id="google-reviews-grid" class="reviews-grid"></div>
+            <p id="google-reviews-fallback" class="reviews-fallback" hidden>
+                Não foi possível carregar as avaliações no momento. Você pode conferir todas elas diretamente no
+                <a href="https://www.google.com/maps/search/Fefelina+Cat+Sitter+Blumenau" target="_blank" rel="noopener">Google Maps</a>.
+            </p>
         </div>
     </section>
 
@@ -426,6 +430,7 @@
 
     <!-- JavaScript -->
     <script src="js/main.js"></script>
+    <script src="js/reviews.js" defer></script>
     
     <!-- Instagram Embed Script -->
     <script async src="//www.instagram.com/embed.js"></script>
