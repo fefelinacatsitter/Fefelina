@@ -1,12 +1,32 @@
 // Fefelina Catsitter - Avaliações do Google (dados sincronizados via GitHub Actions + SerpApi)
 
+// Links oficiais do Google Business Profile da Fefelina (não sensíveis, uso público).
+const GOOGLE_WRITE_REVIEW_URL = 'https://g.page/r/CeJCpmNd9R5rEBE/review';
+const GOOGLE_PROFILE_URL = 'https://maps.app.goo.gl/xzk9pYpY41WwFcgj9';
+
 document.addEventListener('DOMContentLoaded', function () {
     const summaryContainer = document.getElementById('google-reviews-summary');
     const gridContainer = document.getElementById('google-reviews-grid');
     const fallbackMessage = document.getElementById('google-reviews-fallback');
+    const prevButton = document.querySelector('.reviews-nav-prev');
+    const nextButton = document.querySelector('.reviews-nav-next');
 
     if (!gridContainer) {
         return;
+    }
+
+    if (prevButton) {
+        prevButton.addEventListener('click', function () {
+            scrollByCard(-1);
+        });
+    }
+    if (nextButton) {
+        nextButton.addEventListener('click', function () {
+            scrollByCard(1);
+        });
+    }
+    if (gridContainer) {
+        gridContainer.addEventListener('scroll', updateNavState);
     }
 
     fetch('data/reviews.json', { cache: 'no-store' })
@@ -25,6 +45,21 @@ document.addEventListener('DOMContentLoaded', function () {
             showFallback();
         });
 
+    function scrollByCard(direction) {
+        const card = gridContainer.querySelector('.review-card');
+        const step = card ? card.getBoundingClientRect().width + 25 : gridContainer.clientWidth;
+        gridContainer.scrollBy({ left: step * direction, behavior: 'smooth' });
+    }
+
+    function updateNavState() {
+        if (!prevButton || !nextButton) {
+            return;
+        }
+        const maxScrollLeft = gridContainer.scrollWidth - gridContainer.clientWidth - 1;
+        prevButton.disabled = gridContainer.scrollLeft <= 0;
+        nextButton.disabled = gridContainer.scrollLeft >= maxScrollLeft;
+    }
+
     function renderSummary(place) {
         if (!summaryContainer || !place) {
             return;
@@ -41,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
             scoreEl.textContent = place.rating.toFixed(1);
 
             const starsEl = document.createElement('span');
-            starsEl.className = 'review-stars';
+            starsEl.className = 'reviews-summary-stars';
             starsEl.textContent = starsForRating(place.rating);
             starsEl.setAttribute('aria-hidden', 'true');
 
@@ -51,21 +86,37 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (typeof place.totalReviews === 'number') {
-            const countEl = document.createElement('p');
+            const countEl = document.createElement('span');
             countEl.className = 'reviews-summary-count';
-            countEl.textContent = place.totalReviews + ' avaliações no Google';
-            summaryContainer.appendChild(countEl);
+            countEl.textContent = '(' + place.totalReviews + ' avaliações)';
+            const ratingEl = summaryContainer.querySelector('.reviews-summary-rating');
+            if (ratingEl) {
+                ratingEl.appendChild(countEl);
+            } else {
+                summaryContainer.appendChild(countEl);
+            }
         }
 
-        if (place.mapsUrl) {
-            const linkEl = document.createElement('a');
-            linkEl.className = 'reviews-summary-link';
-            linkEl.href = place.mapsUrl;
-            linkEl.target = '_blank';
-            linkEl.rel = 'noopener';
-            linkEl.textContent = 'Ver todas as avaliações no Google';
-            summaryContainer.appendChild(linkEl);
-        }
+        const ctaEl = document.createElement('div');
+        ctaEl.className = 'reviews-cta';
+
+        const writeReviewLink = document.createElement('a');
+        writeReviewLink.className = 'reviews-cta-button reviews-cta-button--primary';
+        writeReviewLink.href = GOOGLE_WRITE_REVIEW_URL;
+        writeReviewLink.target = '_blank';
+        writeReviewLink.rel = 'noopener';
+        writeReviewLink.textContent = 'Avaliar no Google';
+        ctaEl.appendChild(writeReviewLink);
+
+        const viewProfileLink = document.createElement('a');
+        viewProfileLink.className = 'reviews-cta-button reviews-cta-button--secondary';
+        viewProfileLink.href = place.mapsUrl || GOOGLE_PROFILE_URL;
+        viewProfileLink.target = '_blank';
+        viewProfileLink.rel = 'noopener';
+        viewProfileLink.textContent = 'Ver no Google';
+        ctaEl.appendChild(viewProfileLink);
+
+        summaryContainer.appendChild(ctaEl);
     }
 
     function renderReviews(reviews) {
@@ -79,6 +130,8 @@ document.addEventListener('DOMContentLoaded', function () {
         reviews.forEach(function (review) {
             gridContainer.appendChild(buildReviewCard(review));
         });
+
+        updateNavState();
     }
 
     function buildReviewCard(review) {
@@ -137,6 +190,21 @@ document.addEventListener('DOMContentLoaded', function () {
             text.className = 'review-text';
             text.textContent = review.text;
             card.appendChild(text);
+
+            // Texto longo pode ultrapassar o card compacto (quase quadrado);
+            // usamos um limite de caracteres como heurística para decidir
+            // se vale a pena mostrar o botão de expandir.
+            if (review.text.length > 130) {
+                const toggle = document.createElement('button');
+                toggle.type = 'button';
+                toggle.className = 'review-toggle';
+                toggle.textContent = 'Ver mais';
+                toggle.addEventListener('click', function () {
+                    const expanded = card.classList.toggle('expanded');
+                    toggle.textContent = expanded ? 'Ver menos' : 'Ver mais';
+                });
+                card.appendChild(toggle);
+            }
         }
 
         return card;
@@ -153,6 +221,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         if (fallbackMessage) {
             fallbackMessage.hidden = false;
+        }
+        if (prevButton) {
+            prevButton.disabled = true;
+        }
+        if (nextButton) {
+            nextButton.disabled = true;
         }
     }
 });

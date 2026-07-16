@@ -24,7 +24,10 @@ const { URL } = require('url');
 
 const SERPAPI_ENDPOINT = 'https://serpapi.com/search.json';
 const OUTPUT_PATH = path.join(__dirname, '..', 'data', 'reviews.json');
-const MAX_REVIEWS = 8;
+// A API sempre retorna 8 avaliações na primeira página; para trazer mais é
+// preciso paginar usando next_page_token (serpapi_pagination.next_page_token).
+const MAX_REVIEWS = 30;
+const MAX_PAGES = 4;
 
 // data_id do perfil "Fefelina Cat Sitter" no Google Maps.
 // Não é um dado sensível (é apenas um identificador público de local),
@@ -125,14 +128,22 @@ async function requestJson(targetUrl) {
     return requestJsonViaProxy(targetUrl, proxyUrl);
 }
 
-async function fetchReviewsPage(apiKey, dataId) {
+async function fetchReviewsPage(apiKey, dataId, nextPageToken) {
     const params = new URLSearchParams({
         engine: 'google_maps_reviews',
         data_id: dataId,
         hl: 'pt-BR',
-        sort_by: 'newestFirst',
         api_key: apiKey,
     });
+
+    if (nextPageToken) {
+        // Páginas seguintes usam o token e podem pedir até 20 avaliações por vez.
+        params.set('next_page_token', nextPageToken);
+        params.set('num', '20');
+    } else {
+        // A primeira página sempre retorna 8 avaliações, independente de "num".
+        params.set('sort_by', 'newestFirst');
+    }
 
     const url = `${SERPAPI_ENDPOINT}?${params.toString()}`;
     const json = await requestJson(url);
@@ -158,7 +169,7 @@ function mapReview(review) {
     };
 }
 
-function mapPlaceInfo(placeInfo) {
+function mapPlaceInfo(placeInfo, mapsUrl) {
     if (!placeInfo) {
         return null;
     }
@@ -168,7 +179,9 @@ function mapPlaceInfo(placeInfo) {
         rating: typeof placeInfo.rating === 'number' ? placeInfo.rating : null,
         totalReviews: typeof placeInfo.reviews === 'number' ? placeInfo.reviews : null,
         type: placeInfo.type || null,
-        mapsUrl: placeInfo.link || null,
+        // place_info nunca traz um link; o link do perfil vem em
+        // search_metadata.google_maps_reviews_url (apenas na primeira página).
+        mapsUrl: mapsUrl || null,
     };
 }
 
@@ -176,11 +189,29 @@ async function main() {
     const apiKey = getRequiredEnv('SERPAPI_API_KEY');
     const dataId = process.env.GOOGLE_DATA_ID || DEFAULT_DATA_ID;
 
-    const json = await fetchReviewsPage(apiKey, dataId);
+    let allReviews = [];
+    let placeInfo = null;
+    let mapsUrl = null;
+    let nextPageToken = null;
+    let page = 0;
 
-    const reviews = Array.isArray(json.reviews)
-        ? json.reviews.slice(0, MAX_REVIEWS).map(mapReview)
-        : [];
+    do {
+        const json = await fetchReviewsPage(apiKey, dataId, nextPageToken);
+
+        if (page === 0) {
+            placeInfo = json.place_info || null;
+            mapsUrl = json.search_metadata?.google_maps_reviews_url || null;
+        }
+
+        if (Array.isArray(json.reviews)) {
+            allReviews = allReviews.concat(json.reviews);
+        }
+
+        nextPageToken = json.serpapi_pagination?.next_page_token || null;
+        page += 1;
+    } while (nextPageToken && allReviews.length < MAX_REVIEWS && page < MAX_PAGES);
+
+    const reviews = allReviews.slice(0, MAX_REVIEWS).map(mapReview);
 
     if (reviews.length === 0) {
         throw new Error('Nenhuma avaliação retornada pela SerpApi; abortando para não sobrescrever dados existentes.');
@@ -188,7 +219,7 @@ async function main() {
 
     const snapshot = {
         updatedAt: new Date().toISOString(),
-        place: mapPlaceInfo(json.place_info),
+        place: mapPlaceInfo(placeInfo, mapsUrl),
         reviews,
     };
 

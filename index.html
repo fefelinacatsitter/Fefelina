@@ -211,13 +211,18 @@
         <div class="container">
             <h2 class="section-title">O que nossos clientes estão falando</h2>
             <div id="google-reviews-summary" class="reviews-summary"></div>
-            <div id="google-reviews-grid" class="reviews-grid"></div>
+            <div class="reviews-slider">
+                <button type="button" class="reviews-nav reviews-nav-prev" aria-label="Avaliação anterior">&#10094;</button>
+                <div id="google-reviews-grid" class="reviews-track"></div>
+                <button type="button" class="reviews-nav reviews-nav-next" aria-label="Próxima avaliação">&#10095;</button>
+            </div>
             <p id="google-reviews-fallback" class="reviews-fallback" hidden>
                 Não foi possível carregar as avaliações no momento. Você pode conferir todas elas diretamente no
                 <a href="https://www.google.com/maps/search/Fefelina+Cat+Sitter+Blumenau" target="_blank" rel="noopener">Google Maps</a>.
             </p>
         </div>
     </section>
+
 
     <div class="section-divider"></div>
 
