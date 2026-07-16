@@ -10,6 +10,11 @@ on:
 permissions:
   contents: write
 
+# data_id não é sensível (é apenas o identificador público do perfil do
+# Google Maps), por isso fica direto aqui em vez de em um secret.
+env:
+  GOOGLE_DATA_ID: '0xa4c378cb5df94505:0x6b1ef55d63a642e2'
+
 jobs:
   sync-reviews:
     runs-on: ubuntu-latest
@@ -25,7 +30,6 @@ jobs:
       - name: Buscar avaliações na SerpApi
         env:
           SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
-          GOOGLE_DATA_ID: ${{ secrets.GOOGLE_DATA_ID }}
         run: node scripts/fetch-google-reviews.js
 
       - name: Commitar alterações (se houver)
