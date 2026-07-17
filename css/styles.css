@@ -1094,10 +1094,6 @@ body {
         gap: 30px;
     }
 
-    .hero-image {
-        order: -1;
-    }
-
     .hero-image img {
         max-width: 320px;
     }
