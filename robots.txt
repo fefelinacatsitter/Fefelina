@@ -5,7 +5,7 @@ Allow: /css/
 Allow: /js/
 
 # Sitemap
-Sitemap: https://fefelinacatsitter.com/sitemap.xml
+Sitemap: https://www.fefelina.com.br/sitemap.xml
 
 # Crawl-delay for polite crawling
 Crawl-delay: 1
