@@ -75,7 +75,7 @@ body {
 .social-badge-link:hover {
     background: rgba(127, 80, 198, 0.1);
     transform: scale(1.1);
-    color: #e28e60;
+    color: var(--color-peach-dark);
 }
 
 .social-badge-link svg {
@@ -85,7 +85,7 @@ body {
 
 /* Header Styles */
 .header {
-    height: 50vh;
+    padding: 30px 0;
     background-image: url('../images/FefelinaBackground.png');
     background-size: cover;
     background-position: center;
@@ -93,14 +93,131 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
 
 .header-logo {
-    max-width: 300px;
+    max-width: 180px;
     width: 100%;
     height: auto;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+/* Hero Section */
+:root {
+    --color-lilac-soft: #E7E1F7;
+    --color-lilac-vivid: #A876E3;
+    --color-peach-soft: #FDEBE1;
+    --color-peach-vivid: #FF9F6C;
+    --color-peach-dark: #B85C2E;
+    --color-ink: #231F2B;
+}
+
+.hero-section {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    background: linear-gradient(135deg, var(--color-peach-soft) 0%, var(--color-lilac-soft) 100%);
+    overflow: hidden;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 540px;
+}
+
+.hero-eyebrow {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--color-peach-dark);
+    margin-bottom: 16px;
+}
+
+.hero-title {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 1.2;
+    color: var(--color-ink);
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--color-ink);
+    margin-bottom: 32px;
+}
+
+.hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--color-ink);
+    background-color: var(--color-peach-vivid);
+    padding: 16px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(184, 92, 46, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-cta:hover {
+    background-color: var(--color-peach-dark);
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(184, 92, 46, 0.3);
+}
+
+.hero-cta:focus-visible {
+    outline: 3px solid var(--color-lilac-vivid);
+    outline-offset: 3px;
+}
+
+.hero-image {
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 24px;
+    box-shadow: 0 25px 50px rgba(35, 31, 43, 0.18);
+    margin: 0 auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .hero-text {
+        animation: hero-fade-in 0.8s ease both;
+    }
+
+    .hero-image {
+        animation: hero-fade-in 0.8s ease 0.15s both;
+    }
+}
+
+@keyframes hero-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Section Styles */
@@ -114,7 +231,7 @@ body {
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 40px;
-    color: #e28e60;
+    color: var(--color-peach-dark);
 }
 
 /* Section Dividers */
@@ -124,6 +241,12 @@ body {
     margin: 0 auto;
     width: 80%;
     max-width: 400px;
+}
+
+.header + .section-divider {
+    background: linear-gradient(90deg, var(--color-peach-soft), var(--color-lilac-vivid) 50%, var(--color-peach-soft));
+    width: 100%;
+    max-width: none;
 }
 
 /* About Section */
@@ -211,7 +334,7 @@ body {
 .service-subtitle {
     font-size: 18px;
     font-weight: bold;
-    color: #e28e60;
+    color: var(--color-peach-dark);
     margin-bottom: 15px;
 }
 
@@ -223,14 +346,14 @@ body {
 }
 
 .whatsapp-link {
-    color: #e28e60;
+    color: var(--color-peach-dark);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .whatsapp-link:hover {
-    color: #d67c47;
+    color: #8f461f;
     text-decoration: underline;
 }
 
@@ -582,7 +705,7 @@ body {
 }
 
 .faq-answer strong {
-    color: #e28e60;
+    color: var(--color-peach-dark);
 }
 
 .faq-cta {
@@ -924,6 +1047,14 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+    .hero-title {
+        font-size: 38px;
+    }
+
+    .hero-image img {
+        max-width: 380px;
+    }
+
     .services-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 30px;
@@ -949,12 +1080,34 @@ body {
 }
 
 @media (max-width: 768px) {
-    .header {
-        height: 40vh;
-    }
-    
     .header-logo {
-        max-width: 250px;
+        max-width: 150px;
+    }
+
+    .hero-section {
+        min-height: auto;
+        padding: 50px 0 40px;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero-image {
+        order: -1;
+    }
+
+    .hero-image img {
+        max-width: 320px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
     }
 
     .reviews-nav {
@@ -1100,12 +1253,21 @@ body {
         padding: 0 15px;
     }
     
-    .header {
-        height: 35vh;
-    }
-    
     .header-logo {
-        max-width: 200px;
+        max-width: 130px;
+    }
+
+    .hero-title {
+        font-size: 26px;
+    }
+
+    .hero-subtitle {
+        font-size: 15px;
+    }
+
+    .hero-cta {
+        padding: 14px 24px;
+        font-size: 15px;
     }
     
     .faq-subtitle {
