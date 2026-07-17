@@ -302,6 +302,10 @@ body {
     margin-top: 40px;
 }
 
+.services-grid .service-item:last-child {
+    grid-column: 1 / -1;
+}
+
 .service-item {
     text-align: center;
     padding: 30px 20px;
