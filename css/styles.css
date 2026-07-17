@@ -660,7 +660,7 @@ body {
 }
 
 .faq-question:hover {
-    color: #e28e60;
+    color: var(--color-peach-dark);
 }
 
 .faq-question-text {
@@ -1108,6 +1108,12 @@ body {
 
     .hero-subtitle {
         font-size: 16px;
+    }
+
+    .hero-cta {
+        display: flex;
+        width: fit-content;
+        margin: 0 auto;
     }
 
     .reviews-nav {
