@@ -286,7 +286,7 @@ body {
 
 .about-text h3 {
     font-size: 24px;
-    color: #e28e60;
+    color: var(--color-peach-dark);
     margin-bottom: 20px;
     font-weight: 600;
 }
@@ -383,11 +383,11 @@ body {
 .reviews-summary-score {
     font-size: 24px;
     font-weight: 600;
-    color: #e28e60;
+    color: var(--color-peach-dark);
 }
 
 .reviews-summary-stars {
-    color: #fbbc04;
+    color: #946200;
     font-size: 18px;
     letter-spacing: 1px;
 }
@@ -475,7 +475,7 @@ body {
     border-radius: 50%;
     border: none;
     background-color: #fff;
-    color: #e28e60;
+    color: var(--color-peach-dark);
     font-size: 16px;
     cursor: pointer;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
@@ -493,7 +493,7 @@ body {
     cursor: default;
     transform: none;
     background-color: #fff;
-    color: #e28e60;
+    color: var(--color-peach-dark);
 }
 
 .review-card {
@@ -554,7 +554,7 @@ body {
 }
 
 .review-stars {
-    color: #e28e60;
+    color: var(--color-peach-dark);
     font-size: 14px;
     letter-spacing: 1px;
     margin-bottom: 6px;
