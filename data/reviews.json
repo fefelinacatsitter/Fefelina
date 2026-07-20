@@ -1,14 +1,25 @@
 {
-  "updatedAt": "2026-07-16T18:15:28.747Z",
+  "updatedAt": "2026-07-20T10:06:16.090Z",
   "place": {
     "name": "Fefelina Cat Sitter",
     "address": "R. Joinville, 699 - Vila Nova, Blumenau - SC, 89035-200, Brasil",
     "rating": 5,
-    "totalReviews": 30,
+    "totalReviews": 31,
     "type": "Babá de animais de estimação",
     "mapsUrl": "https://www.google.com/maps/place/data=!4m7!3m6!1s0xa4c378cb5df94505:0x6b1ef55d63a642e2!5m2!4m1!1i2!9m1!1b1?hl=pt-BR"
   },
   "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tSZmFqQXRXa1k1YVVZNFQyWnRhVlphZDJKck1tYxAB",
+      "author": "Geórgia Wosniak",
+      "authorPhoto": "https://lh3.googleusercontent.com/a-/ALV-UjUCgGqZ_4pi_v5hTMTbF3-myoPeyDatO1WVnFbmfYQHd6cqHHc=s120-c-rp-mo-br100",
+      "authorLink": "https://www.google.com/maps/contrib/105441808555278437323?hl=pt-BR",
+      "isLocalGuide": true,
+      "rating": 5,
+      "relativeDate": "9 horas atrás",
+      "text": "Sempre cuidam da nossa gatinha Eva, quando viajamos. Muito atenciosos, com ela e conosco também. Brincam muito e fazem toda a rotina de higiene e alimentação do pet. Mandam muitos vídeos pra gente matar a saudade e estar por dentro de tudo. Confio muito!",
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSZmFqQXRXa1k1YVVZNFQyWnRhVlphZDJKck1tYxAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOkRfajAtWkY5aUY4T2ZtaVZad2JrMmc%7C%7C?hl=pt-BR"
+    },
     {
       "id": "Ci9DQUlRQUNvZENodHljRjlvT2sxNlFsbEJaV1pHZEZwSmRGTXRPRWsyYUU5RVQzYxAB",
       "author": "Edi Corrêa",
@@ -16,7 +27,7 @@
       "authorLink": "https://www.google.com/maps/contrib/114759227879298372223?hl=pt-BR",
       "isLocalGuide": true,
       "rating": 5,
-      "relativeDate": "4 horas atrás",
+      "relativeDate": "3 dias atrás",
       "text": "A Fê é muito dedicada e cuidou muito bem do Brownie e do Nico, mesmo o Nico sendo super medroso com as pessoas, ele interagiu bastante com ela. Tenho total confiança de deixar meus gatinhos sob o cuidado dela :D",
       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxNlFsbEJaV1pHZEZwSmRGTXRPRWsyYUU5RVQzYxAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOk16QllBZWZGdFpJdFMtOEk2aE9ET3c%7C%7C?hl=pt-BR"
     },
@@ -27,7 +38,7 @@
       "authorLink": "https://www.google.com/maps/contrib/104176008968636131808?hl=pt-BR",
       "isLocalGuide": true,
       "rating": 5,
-      "relativeDate": "uma semana atrás",
+      "relativeDate": "2 semanas atrás",
       "text": "Excelente trabalho!! Super prestativa, amável, cuidou super bem das minhas filhotas.",
       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21aT1NuazFOMmg2U0dVdFgxSlpNbGN5VWpSbWNFRRAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOmZOSnk1N2h6SGUtX1JZMlcyUjRmcEE%7C%7C?hl=pt-BR"
     },
@@ -60,7 +71,7 @@
       "authorLink": "https://www.google.com/maps/contrib/103216028931026764895?hl=pt-BR",
       "isLocalGuide": true,
       "rating": 5,
-      "relativeDate": "2 meses atrás",
+      "relativeDate": "3 meses atrás",
       "text": "A Fernanda cuidou do nosso gatinho Tico-Tico na nossa primeira viagem longe dele. Ela e o André criaram um excelente vínculo com ele, logo conquistaram a sua confiança. Nos sentimos muito seguros com o suporte deles!",
       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w4d1ZHNVpjVEl6TFMxU1kxbGtNemxJUjFsV2EzYxAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOl8wVG5ZcTIzLS1SY1lkMzlIR1lWa3c%7C%7C?hl=pt-BR"
     },
@@ -85,28 +96,6 @@
       "relativeDate": "4 meses atrás",
       "text": "Eu e meu esposo nos mudamos há pouco tempo para Blumenau e precisávamos muito de alguém de confiança para cuidar da nossa gatinha. Graças a Deus achamos eles: Fefelina Cat Sitter. Desde o primeiro contato foram solícitos e proativos, fizeram um grupo para mandar fotos, vídeos e áudios dando atualizações da nossa gatinha, e nos deixando super despreocupados para curtir nossa viagem. Simplesmente não tenho palavras para agradecer pelo ótimo trabalho, é perceptível o amor que eles tem pelos gatinhos. Indico de olhos fechados!!",
       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21oUlpHMHRkWEJ1Tm5WSUxWWm1XR1Z1Y25kVWJsRRAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOmhRZG0tdXBuNnVILVZmWGVucndUblE%7C%7C?hl=pt-BR"
-    },
-    {
-      "id": "Ci9DQUlRQUNvZENodHljRjlvT201S09UbDJhakpGYkU5aFQxZEZRMVl6TmpOTFlYYxAB",
-      "author": "Jessica Paulo",
-      "authorPhoto": "https://lh3.googleusercontent.com/a-/ALV-UjV9e9uu1dR-MhmCUxVbx8Nh_mtJoFBwv75QB1KAFFKNmacZhgb67Q=s120-c-rp-mo-br100",
-      "authorLink": "https://www.google.com/maps/contrib/113181570129365231845?hl=pt-BR",
-      "isLocalGuide": true,
-      "rating": 5,
-      "relativeDate": "5 meses atrás",
-      "text": "A tia Fe e o tio André cuidaram dos meus 6 gatinhos enquanto viajávamos e não poderíamos ter feito escolha melhor! Extremamente atenciosos, cuidadosos e carinhosos com cada um deles.\n\nDesde o primeiro contato demonstraram muito profissionalismo e carinho pelos animais. Durante a viagem, nos manteviveram sempre informados com mensagens, fotos e vídeos, o que nos deixou muito tranquilos.\n\nPercebe-se que realmente amam o que fazem. Cuidaram de cada detalhe, respeitando as necessidades e personalidades diferentes dos meus seis gatinhos. Voltamos para casa e encontramos todos bem, felizes e muito bem cuidados.\n\nRecomendo de olhos fechados! 💛🐾",
-      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201S09UbDJhakpGYkU5aFQxZEZRMVl6TmpOTFlYYxAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOm5KOTl2ajJFbE9hT1dFQ1YzNjNLYXc%7C%7C?hl=pt-BR"
-    },
-    {
-      "id": "Ci9DQUlRQUNvZENodHljRjlvT21WRGMxWnVXVlZHVlVsa1dqTTRlbEJFUjJsYVRuYxAB",
-      "author": "Marina Souza",
-      "authorPhoto": "https://lh3.googleusercontent.com/a-/ALV-UjWdvmX_E8mYPgLK7ECmFa2tWmpkKoBI-SWqqQGFk248VNvqvmKv=s120-c-rp-mo-br100",
-      "authorLink": "https://www.google.com/maps/contrib/114015282891941213619?hl=pt-BR",
-      "isLocalGuide": false,
-      "rating": 5,
-      "relativeDate": "9 meses atrás",
-      "text": "Gostamos muito da experiência com a Fernanda e o André! Foi a nossa primeira vez contratando cat sitter e, confesso, estávamos bem inseguros,  afinal, íamos ficar alguns dias fora e deixar a chave da nossa casa com alguém que não nu conhecíamos. E se eles não aparecessem? Meu namorado estava receoso, mas logo nas primeiras conversas a Fernanda foi super calma, atenciosa e nos passou confiança.\n\nDurante a viagem, ela foi extremamente pontual nos horários combinados, enviou várias fotos e vídeos e respeitou o tempo dos nossos gatinhos, sem forçar interação. Estamos voltando para casa com a sensação de que eles estavam felizes e bem cuidados.\n\nCom certeza vamos contratar novamente em nossas próximas viagens! Foi um alívio poder viajar tranquilos sabendo que nossos gatos estavam em boas mãos.",
-      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21WRGMxWnVXVlZHVlVsa1dqTTRlbEJFUjJsYVRuYxAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOmVDc1ZuWVVGVUlkWjM4elBER2laTnc%7C%7C?hl=pt-BR"
     },
     {
       "id": "Ci9DQUlRQUNvZENodHljRjlvT21oQlNHeHRSRUZVUkVSVVNsY3lZbFZYTmtZdE1rRRAB",
@@ -181,7 +170,7 @@
       "authorLink": "https://www.google.com/maps/contrib/103216028931026764895?hl=pt-BR",
       "isLocalGuide": false,
       "rating": 5,
-      "relativeDate": "2 meses atrás",
+      "relativeDate": "3 meses atrás",
       "text": "A Fernanda cuidou do nosso gatinho Tico-Tico na nossa primeira viagem longe dele. Ela e o André criaram um excelente vínculo com ele, logo conquistaram a sua confiança. Nos sentimos muito seguros com o suporte deles!",
       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w4d1ZHNVpjVEl6TFMxU1kxbGtNemxJUjFsV2EzYxAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOl8wVG5ZcTIzLS1SY1lkMzlIR1lWa3c%7C%7C?hl=pt-BR"
     },
@@ -236,7 +225,7 @@
       "authorLink": "https://www.google.com/maps/contrib/116229559525426189891?hl=pt-BR",
       "isLocalGuide": false,
       "rating": 5,
-      "relativeDate": "5 meses atrás",
+      "relativeDate": "6 meses atrás",
       "text": "A experiência foi incrível. Tia Fê e o Tio André são gentis, calmos e muito carinhos com nossos miaus. Percebemos o cuidado que eles têm para tirar a tensão dos gatinhos, foram pacientes, respeitando o tempo de aproximação deles, sempre brincando em cada visita, tendo cuidado para manter a higiene e a alimentação de acordo com as recomendações. Adoramos o serviço-cuidado prestado.",
       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1SVVVVTRSbU5WV1RkdWEyNXJSV1JSTkRaNFVIYxAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOk5IUUU4RmNVWTdua25rRWRRNDZ4UHc%7C%7C?hl=pt-BR"
     },
@@ -247,20 +236,9 @@
       "authorLink": "https://www.google.com/maps/contrib/118079103325474787648?hl=pt-BR",
       "isLocalGuide": false,
       "rating": 5,
-      "relativeDate": "9 meses atrás",
+      "relativeDate": "10 meses atrás",
       "text": "São os melhores. O André e a Fernanda são pessoas de confiança e cuidam do nosso filhote com todo amor e carinho. Sempre mandam vários vídeos e fotos das visitas, o que nos tranquiliza.\nObrigado pelo excelente trabalho que vocês fazem.",
       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21ocUxXRmxkWEJOUnpOMk4ycFFOM051U3pFNWFsRRAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOmhqLWFldXBNRzN2N2pQN3NuSzE5alE%7C%7C?hl=pt-BR"
-    },
-    {
-      "id": "ChdDSUhNMG9nS0VNQ00yYXZvLV9YbWdnRRAB",
-      "author": "amanda vieira",
-      "authorPhoto": "https://lh3.googleusercontent.com/a/ACg8ocL6C4ziJwgLvGdRY5b5MZX_C6B1QzK-yUP9i4k8346z-eq0_Q=s120-c-rp-mo-br100",
-      "authorLink": "https://www.google.com/maps/contrib/101278890345891571778?hl=pt-BR",
-      "isLocalGuide": false,
-      "rating": 5,
-      "relativeDate": "um ano atrás",
-      "text": "A Fernanda e o André são uns queridos e de extrema confiança. Na primeira vez que precisei de cat sitter, eles me responderam atenciosamente e tiveram todo o cuidado de ir na minha casa se apresentar, além conhecer o local e os gatinhos. Desde então, sempre que eu preciso, conto com eles. Meus gatos adoram eles e a Fernanda sempre envia vídeos das visitas, as quais são sempre cheias de brincadeiras com os gatos, mostrando todo o carinho e a dedicação que a Fe tem pelo trabalho. Indico para todo mundo e não poderia pedir por uma catsitter melhor ;)",
-      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VNQ00yYXZvLV9YbWdnRRAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CIHM0ogKEMCM2avo-_XmggE%7C%7C?hl=pt-BR"
     },
     {
       "id": "Ci9DQUlRQUNvZENodHljRjlvT2xRd1MySm5aVFppVEZCSVdIVlVWVzV6YzJOamJFRRAB",
@@ -272,6 +250,17 @@
       "relativeDate": "um mês atrás",
       "text": "Conheço a Fernanda a vida inteira, pessoa íntegra, inteligente, muito amorosa e respeitosa com os animais. Recomendo de olhos fechados. Entrego as chaves da minha casa e cuidados dos meus animais sem dúvida alguma.",
       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xRd1MySm5aVFppVEZCSVdIVlVWVzV6YzJOamJFRRAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOlQwS2JnZTZiTFBIWHVUVW5zc2NjbEE%7C%7C?hl=pt-BR"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21WRGMxWnVXVlZHVlVsa1dqTTRlbEJFUjJsYVRuYxAB",
+      "author": "Marina Souza",
+      "authorPhoto": "https://lh3.googleusercontent.com/a-/ALV-UjWdvmX_E8mYPgLK7ECmFa2tWmpkKoBI-SWqqQGFk248VNvqvmKv=s120-c-rp-mo-br100",
+      "authorLink": "https://www.google.com/maps/contrib/114015282891941213619?hl=pt-BR",
+      "isLocalGuide": false,
+      "rating": 5,
+      "relativeDate": "9 meses atrás",
+      "text": "Gostamos muito da experiência com a Fernanda e o André! Foi a nossa primeira vez contratando cat sitter e, confesso, estávamos bem inseguros,  afinal, íamos ficar alguns dias fora e deixar a chave da nossa casa com alguém que não nu conhecíamos. E se eles não aparecessem? Meu namorado estava receoso, mas logo nas primeiras conversas a Fernanda foi super calma, atenciosa e nos passou confiança.\n\nDurante a viagem, ela foi extremamente pontual nos horários combinados, enviou várias fotos e vídeos e respeitou o tempo dos nossos gatinhos, sem forçar interação. Estamos voltando para casa com a sensação de que eles estavam felizes e bem cuidados.\n\nCom certeza vamos contratar novamente em nossas próximas viagens! Foi um alívio poder viajar tranquilos sabendo que nossos gatos estavam em boas mãos.",
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21WRGMxWnVXVlZHVlVsa1dqTTRlbEJFUjJsYVRuYxAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOmVDc1ZuWVVGVUlkWjM4elBER2laTnc%7C%7C?hl=pt-BR"
     },
     {
       "id": "Ci9DQUlRQUNvZENodHljRjlvT2toT1FrOW5WMU5DV0hZMWVYWjVkSFUyVHpKemJXYxAB",
@@ -302,7 +291,7 @@
       "authorLink": "https://www.google.com/maps/contrib/114474885817449258176?hl=pt-BR",
       "isLocalGuide": false,
       "rating": 5,
-      "relativeDate": "10 meses atrás",
+      "relativeDate": "11 meses atrás",
       "text": "Fernanda e Andre são pessoas de confiança, cuidaram SUPER bem dos meus dois gatinhos. O Cuidado foi desde conhecer anteriormente os gatinhos e a sua rotina para quando eu fosse viajar eles tivessem menos estresse e mais conforto possível.\nMandaram fotos e videos dos nenis.\nAlém de higienizarem as caixinhas de areia, limparam os potinhos de água e comida. Brincaram e interagiram com eles.\nIndico de olhos fechados.\nParabéns pelo cuidado e dedicação!\nDá pra ver que tem muito afeto no cuidado! <3",
       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WMlkyOXViVmwzTW5sYVkzbFZhRVpVU1dKMFZsRRAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOnV2Y29ubVl3MnlaY3lVaEZUSWJ0VlE%7C%7C?hl=pt-BR"
     },
@@ -316,6 +305,17 @@
       "relativeDate": "11 meses atrás",
       "text": "Nossas meninas são tudo na nossa vida, elas amaaam a Tia Fê e o Tio André e nós viajamos tranquilos, aproveitamos muito mais tendo a certeza de que elas estão sendo bem cuidadas, alimentadas e brincando muuuuito!! Inclusive uma das nossas gatas é bem pouco sociável mas adora brincar com a Fernanda e o André, super recomendo!",
       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KUlQyUjRkMGRhZEdjMU5DMDNjM2hrTVdKTFMxRRAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOnJRT2R4d0dadGc1NC03c3hkMWJLS1E%7C%7C?hl=pt-BR"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VNQ00yYXZvLV9YbWdnRRAB",
+      "author": "amanda vieira",
+      "authorPhoto": "https://lh3.googleusercontent.com/a/ACg8ocL6C4ziJwgLvGdRY5b5MZX_C6B1QzK-yUP9i4k8346z-eq0_Q=s120-c-rp-mo-br100",
+      "authorLink": "https://www.google.com/maps/contrib/101278890345891571778?hl=pt-BR",
+      "isLocalGuide": false,
+      "rating": 5,
+      "relativeDate": "um ano atrás",
+      "text": "A Fernanda e o André são uns queridos e de extrema confiança. Na primeira vez que precisei de cat sitter, eles me responderam atenciosamente e tiveram todo o cuidado de ir na minha casa se apresentar, além conhecer o local e os gatinhos. Desde então, sempre que eu preciso, conto com eles. Meus gatos adoram eles e a Fernanda sempre envia vídeos das visitas, as quais são sempre cheias de brincadeiras com os gatos, mostrando todo o carinho e a dedicação que a Fe tem pelo trabalho. Indico para todo mundo e não poderia pedir por uma catsitter melhor ;)",
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VNQ00yYXZvLV9YbWdnRRAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CIHM0ogKEMCM2avo-_XmggE%7C%7C?hl=pt-BR"
     },
     {
       "id": "ChdDSUhNMG9nS0VLYmxfN0xIclBINGxRRRAB",
