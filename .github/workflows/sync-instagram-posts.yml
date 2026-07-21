@@ -1,0 +1,40 @@
+name: Sincronizar posts do Instagram
+
+# Disparo apenas manual (botão "Run workflow" na aba Actions).
+# Caso queira automatizar no futuro, basta descomentar o bloco `schedule` abaixo.
+on:
+  workflow_dispatch: {}
+  # schedule:
+  #   - cron: '0 6 * * *' # todos os dias às 06:00 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  sync-instagram:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Buscar posts na API do Instagram
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+        run: node scripts/fetch-instagram-posts.js
+
+      - name: Commitar alterações (se houver)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/instagram.json; then
+            echo "Nenhuma mudança nos posts. Nada para commitar."
+          else
+            git add data/instagram.json
+            git commit -m "chore: sincroniza posts do Instagram [skip ci]"
+            git push
+          fi
