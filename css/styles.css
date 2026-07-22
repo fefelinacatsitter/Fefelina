@@ -292,6 +292,64 @@ body {
     font-weight: 600;
 }
 
+/* Certificates Section */
+.certificates-section {
+    background-color: var(--color-lilac-soft);
+}
+
+.certificates-subtitle {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: var(--color-ink);
+    margin-top: -20px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(260px, 340px));
+    justify-content: center;
+    gap: 30px;
+}
+
+.certificate-card {
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(168, 118, 227, 0.2);
+}
+
+.certificate-card img {
+    max-width: 160px;
+    height: auto;
+    margin: 0 auto 20px auto;
+    display: block;
+}
+
+.certificate-name {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-ink);
+    margin-bottom: 10px;
+}
+
+.certificate-info {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
 /* Services Section */
 .services-section {
     background-color: #fff;
@@ -1100,6 +1158,12 @@ body {
 @media (max-width: 768px) {
     .header-logo {
         max-width: 150px;
+    }
+
+    .certificates-grid {
+        grid-template-columns: 1fr;
+        max-width: 340px;
+        margin: 0 auto;
     }
 
     .hero-section {
