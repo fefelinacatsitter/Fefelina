@@ -294,7 +294,7 @@ body {
 
 /* Certificates Section */
 .certificates-section {
-    background-color: var(--color-lilac-soft);
+    background: linear-gradient(135deg, var(--color-peach-soft) 0%, var(--color-lilac-soft) 100%);
 }
 
 .certificates-subtitle {
@@ -316,16 +316,12 @@ body {
 
 .certificate-card {
     text-align: center;
-    padding: 30px 20px;
-    border-radius: 15px;
-    background-color: #FFFFFF;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px 20px;
+    transition: transform 0.3s ease;
 }
 
 .certificate-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(168, 118, 227, 0.2);
 }
 
 .certificate-card img {
@@ -333,6 +329,7 @@ body {
     height: auto;
     margin: 0 auto 20px auto;
     display: block;
+    filter: drop-shadow(0 10px 18px rgba(35, 31, 43, 0.18));
 }
 
 .certificate-name {
