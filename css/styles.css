@@ -1335,10 +1335,15 @@ body {
         height: 35px;
     }
     
-    /* Instagram mobile responsive - single column, show all posts */
+    /* Instagram mobile responsive - show only the first post */
     .instagram-grid {
         grid-template-columns: 1fr !important;
         gap: 15px;
+        max-width: 320px;
+    }
+
+    .instagram-post:not(:first-child) {
+        display: none;
     }
     
     /* Fix Instagram icon size on mobile */
