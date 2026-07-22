@@ -1,14 +1,25 @@
 {
-  "updatedAt": "2026-07-20T10:06:16.090Z",
+  "updatedAt": "2026-07-22T10:05:55.539Z",
   "place": {
     "name": "Fefelina Cat Sitter",
     "address": "R. Joinville, 699 - Vila Nova, Blumenau - SC, 89035-200, Brasil",
     "rating": 5,
-    "totalReviews": 31,
+    "totalReviews": 32,
     "type": "Babá de animais de estimação",
     "mapsUrl": "https://www.google.com/maps/place/data=!4m7!3m6!1s0xa4c378cb5df94505:0x6b1ef55d63a642e2!5m2!4m1!1i2!9m1!1b1?hl=pt-BR"
   },
   "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21OVk9HSnNRVEJQY0RSTE1sSTJSMDQzVVdWSWQwRRAB",
+      "author": "Natália Marin",
+      "authorPhoto": "https://lh3.googleusercontent.com/a-/ALV-UjV3sz3s-jpGzya-FR-vUbnL2xvVE8wrxMbnNahFuISeD3KBqTFk=s120-c-rp-mo-br100",
+      "authorLink": "https://www.google.com/maps/contrib/111728591062839275467?hl=pt-BR",
+      "isLocalGuide": true,
+      "rating": 5,
+      "relativeDate": "10 horas atrás",
+      "text": "Recomendo 100%!\nTenho total confiança em deixar meus dois gatos aos cuidados da Fefelina Cat Sitter, eles não apenas cuidam muito bem deles, como também respeitam a personalidade de cada um e o espaço deles.\nMinha gata é arisca com qualquer pessoa, mas a Fernanda e o André ganharam a confiança dela desde o início.\nSem falar que meus gatos amam as brincadeiras e sempre recebo atualizações de como estão, vídeo, fotos.\nPosso viajar tranquila que sei eles estarão em boas mãos.",
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21OVk9HSnNRVEJQY0RSTE1sSTJSMDQzVVdWSWQwRRAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOmNVOGJsQTBPcDRLMlI2R043UWVId0E%7C%7C?hl=pt-BR"
+    },
     {
       "id": "Ci9DQUlRQUNvZENodHljRjlvT2tSZmFqQXRXa1k1YVVZNFQyWnRhVlphZDJKck1tYxAB",
       "author": "Geórgia Wosniak",
@@ -16,7 +27,7 @@
       "authorLink": "https://www.google.com/maps/contrib/105441808555278437323?hl=pt-BR",
       "isLocalGuide": true,
       "rating": 5,
-      "relativeDate": "9 horas atrás",
+      "relativeDate": "2 dias atrás",
       "text": "Sempre cuidam da nossa gatinha Eva, quando viajamos. Muito atenciosos, com ela e conosco também. Brincam muito e fazem toda a rotina de higiene e alimentação do pet. Mandam muitos vídeos pra gente matar a saudade e estar por dentro de tudo. Confio muito!",
       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSZmFqQXRXa1k1YVVZNFQyWnRhVlphZDJKck1tYxAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOkRfajAtWkY5aUY4T2ZtaVZad2JrMmc%7C%7C?hl=pt-BR"
     },
@@ -27,7 +38,7 @@
       "authorLink": "https://www.google.com/maps/contrib/114759227879298372223?hl=pt-BR",
       "isLocalGuide": true,
       "rating": 5,
-      "relativeDate": "3 dias atrás",
+      "relativeDate": "5 dias atrás",
       "text": "A Fê é muito dedicada e cuidou muito bem do Brownie e do Nico, mesmo o Nico sendo super medroso com as pessoas, ele interagiu bastante com ela. Tenho total confiança de deixar meus gatinhos sob o cuidado dela :D",
       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxNlFsbEJaV1pHZEZwSmRGTXRPRWsyYUU5RVQzYxAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOk16QllBZWZGdFpJdFMtOEk2aE9ET3c%7C%7C?hl=pt-BR"
     },
@@ -85,17 +96,6 @@
       "relativeDate": "3 meses atrás",
       "text": "Muito atenciosos, cuidadosos e caprichosos!  Sempre manando fotos e vídeos dos gatinhos. Os gatos amaram, mesmo sendo ariscos saíram para interagir. Super recomendo! ♥️",
       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxWk1EUjZiRzV2U0ZCc2JYcGxURGhhU0RBMk5rRRAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOi1ZMDR6bG5vSFBsbXplTDhaSDA2NkE%7C%7C?hl=pt-BR"
-    },
-    {
-      "id": "Ci9DQUlRQUNvZENodHljRjlvT21oUlpHMHRkWEJ1Tm5WSUxWWm1XR1Z1Y25kVWJsRRAB",
-      "author": "Ariele Nóbrega Silva",
-      "authorPhoto": "https://lh3.googleusercontent.com/a-/ALV-UjWnxQlNbXO_gCcs3mRPtWgdE_EcHoGkLiByu21xde3A5ubeUPTC-A=s120-c-rp-mo-br100",
-      "authorLink": "https://www.google.com/maps/contrib/103492831276627888707?hl=pt-BR",
-      "isLocalGuide": true,
-      "rating": 5,
-      "relativeDate": "4 meses atrás",
-      "text": "Eu e meu esposo nos mudamos há pouco tempo para Blumenau e precisávamos muito de alguém de confiança para cuidar da nossa gatinha. Graças a Deus achamos eles: Fefelina Cat Sitter. Desde o primeiro contato foram solícitos e proativos, fizeram um grupo para mandar fotos, vídeos e áudios dando atualizações da nossa gatinha, e nos deixando super despreocupados para curtir nossa viagem. Simplesmente não tenho palavras para agradecer pelo ótimo trabalho, é perceptível o amor que eles tem pelos gatinhos. Indico de olhos fechados!!",
-      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21oUlpHMHRkWEJ1Tm5WSUxWWm1XR1Z1Y25kVWJsRRAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOmhRZG0tdXBuNnVILVZmWGVucndUblE%7C%7C?hl=pt-BR"
     },
     {
       "id": "Ci9DQUlRQUNvZENodHljRjlvT21oQlNHeHRSRUZVUkVSVVNsY3lZbFZYTmtZdE1rRRAB",
@@ -159,7 +159,7 @@
       "authorLink": "https://www.google.com/maps/contrib/103923004210084178896?hl=pt-BR",
       "isLocalGuide": false,
       "rating": 5,
-      "relativeDate": "7 meses atrás",
+      "relativeDate": "8 meses atrás",
       "text": "Incriveis! Eu e minha esposa pedimos para que a Fernanda e o André cuidassem dos nossos gatos, PARABÉNS DEMAIS pela atenção e carinho! Nos atualizaram o tempo todo de quando estavam indo no nosso apartamento, mandaram fotos e cuidaram de tudo! Recomendo fortemente!",
       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkMFpFZ3lSblpLTkhWd2RraHBZVXh1T0hGa05FRRAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOld0ZEgyRnZKNHVwdkhpYUxuOHFkNEE%7C%7C?hl=pt-BR"
     },
@@ -186,6 +186,17 @@
       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21oUlpHMHRkWEJ1Tm5WSUxWWm1XR1Z1Y25kVWJsRRAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOmhRZG0tdXBuNnVILVZmWGVucndUblE%7C%7C?hl=pt-BR"
     },
     {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s1SVVVVTRSbU5WV1RkdWEyNXJSV1JSTkRaNFVIYxAB",
+      "author": "Camila Dellagiustina",
+      "authorPhoto": "https://lh3.googleusercontent.com/a/ACg8ocKaRMH88VTRqWwDyZ9o2NcWbGwOif14j3smQJS1yL1tCEyPsA=s120-c-rp-mo-br100",
+      "authorLink": "https://www.google.com/maps/contrib/116229559525426189891?hl=pt-BR",
+      "isLocalGuide": false,
+      "rating": 5,
+      "relativeDate": "6 meses atrás",
+      "text": "A experiência foi incrível. Tia Fê e o Tio André são gentis, calmos e muito carinhos com nossos miaus. Percebemos o cuidado que eles têm para tirar a tensão dos gatinhos, foram pacientes, respeitando o tempo de aproximação deles, sempre brincando em cada visita, tendo cuidado para manter a higiene e a alimentação de acordo com as recomendações. Adoramos o serviço-cuidado prestado.",
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1SVVVVTRSbU5WV1RkdWEyNXJSV1JSTkRaNFVIYxAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOk5IUUU4RmNVWTdua25rRWRRNDZ4UHc%7C%7C?hl=pt-BR"
+    },
+    {
       "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxME1EVjNOMGxUZEhsV1JWRndiVTV2VEVFemRtYxAB",
       "author": "Pamyle Brugnago",
       "authorPhoto": "https://lh3.googleusercontent.com/a-/ALV-UjXzGhTpRg2gPM37EMFHFq9ZU-d77Sd1W8wu2xQjxUemWFj5zGyF=s120-c-rp-mo-br100",
@@ -208,39 +219,6 @@
       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tsbVNqaGpUbFUxZEdGSWJWQkZVRTlSVERSaFNGRRAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOklmSjhjTlU1dGFIbVBFUE9RTDRhSFE%7C%7C?hl=pt-BR"
     },
     {
-      "id": "Ci9DQUlRQUNvZENodHljRjlvT25KS1VIQlhWM1ZXYlRGTmMwOVNjM3BJUmtJNFFYYxAB",
-      "author": "Elisabete Volles",
-      "authorPhoto": "https://lh3.googleusercontent.com/a-/ALV-UjUcgqi2TZ46CAkTllEQJiaZcEzJ-NCnzg_uiIr19yZvxJLgcwUR=s120-c-rp-mo-ba12-br100",
-      "authorLink": "https://www.google.com/maps/contrib/107405949142300705764?hl=pt-BR",
-      "isLocalGuide": false,
-      "rating": 5,
-      "relativeDate": "Editado 6 meses atrás",
-      "text": "Toda vez que viajamos temos *Fefelinacatsitter* o Andre e a Fernanda que cuidam carinhosamente de nossa Belinha. Eles são simplesmente maravilhosos",
-      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KS1VIQlhWM1ZXYlRGTmMwOVNjM3BJUmtJNFFYYxAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOnJKUHBXV3VWbTFNc09Sc3pIRkI4QXc%7C%7C?hl=pt-BR"
-    },
-    {
-      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s1SVVVVTRSbU5WV1RkdWEyNXJSV1JSTkRaNFVIYxAB",
-      "author": "Camila Dellagiustina",
-      "authorPhoto": "https://lh3.googleusercontent.com/a/ACg8ocKaRMH88VTRqWwDyZ9o2NcWbGwOif14j3smQJS1yL1tCEyPsA=s120-c-rp-mo-br100",
-      "authorLink": "https://www.google.com/maps/contrib/116229559525426189891?hl=pt-BR",
-      "isLocalGuide": false,
-      "rating": 5,
-      "relativeDate": "6 meses atrás",
-      "text": "A experiência foi incrível. Tia Fê e o Tio André são gentis, calmos e muito carinhos com nossos miaus. Percebemos o cuidado que eles têm para tirar a tensão dos gatinhos, foram pacientes, respeitando o tempo de aproximação deles, sempre brincando em cada visita, tendo cuidado para manter a higiene e a alimentação de acordo com as recomendações. Adoramos o serviço-cuidado prestado.",
-      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1SVVVVTRSbU5WV1RkdWEyNXJSV1JSTkRaNFVIYxAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOk5IUUU4RmNVWTdua25rRWRRNDZ4UHc%7C%7C?hl=pt-BR"
-    },
-    {
-      "id": "Ci9DQUlRQUNvZENodHljRjlvT21ocUxXRmxkWEJOUnpOMk4ycFFOM051U3pFNWFsRRAB",
-      "author": "César Albuquerque",
-      "authorPhoto": "https://lh3.googleusercontent.com/a/ACg8ocIpVwVdEuQpBBVmHsBucgQdJ8xRhGYw2TenhoBrZ5loG4rfQg=s120-c-rp-mo-ba12-br100",
-      "authorLink": "https://www.google.com/maps/contrib/118079103325474787648?hl=pt-BR",
-      "isLocalGuide": false,
-      "rating": 5,
-      "relativeDate": "10 meses atrás",
-      "text": "São os melhores. O André e a Fernanda são pessoas de confiança e cuidam do nosso filhote com todo amor e carinho. Sempre mandam vários vídeos e fotos das visitas, o que nos tranquiliza.\nObrigado pelo excelente trabalho que vocês fazem.",
-      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21ocUxXRmxkWEJOUnpOMk4ycFFOM051U3pFNWFsRRAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOmhqLWFldXBNRzN2N2pQN3NuSzE5alE%7C%7C?hl=pt-BR"
-    },
-    {
       "id": "Ci9DQUlRQUNvZENodHljRjlvT2xRd1MySm5aVFppVEZCSVdIVlVWVzV6YzJOamJFRRAB",
       "author": "tata lbloemer",
       "authorPhoto": "https://lh3.googleusercontent.com/a-/ALV-UjWROWwjSL1oMPTa9nJjoL_5iPVjxS1O33rZ1H_XqxK-O1kzk-EpSg=s120-c-rp-mo-ba12-br100",
@@ -250,6 +228,17 @@
       "relativeDate": "um mês atrás",
       "text": "Conheço a Fernanda a vida inteira, pessoa íntegra, inteligente, muito amorosa e respeitosa com os animais. Recomendo de olhos fechados. Entrego as chaves da minha casa e cuidados dos meus animais sem dúvida alguma.",
       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xRd1MySm5aVFppVEZCSVdIVlVWVzV6YzJOamJFRRAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOlQwS2JnZTZiTFBIWHVUVW5zc2NjbEE%7C%7C?hl=pt-BR"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25KS1VIQlhWM1ZXYlRGTmMwOVNjM3BJUmtJNFFYYxAB",
+      "author": "Elisabete Volles",
+      "authorPhoto": "https://lh3.googleusercontent.com/a-/ALV-UjUcgqi2TZ46CAkTllEQJiaZcEzJ-NCnzg_uiIr19yZvxJLgcwUR=s120-c-rp-mo-ba12-br100",
+      "authorLink": "https://www.google.com/maps/contrib/107405949142300705764?hl=pt-BR",
+      "isLocalGuide": false,
+      "rating": 5,
+      "relativeDate": "Editado 6 meses atrás",
+      "text": "Toda vez que viajamos temos *Fefelinacatsitter* o Andre e a Fernanda que cuidam carinhosamente de nossa Belinha. Eles são simplesmente maravilhosos",
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KS1VIQlhWM1ZXYlRGTmMwOVNjM3BJUmtJNFFYYxAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOnJKUHBXV3VWbTFNc09Sc3pIRkI4QXc%7C%7C?hl=pt-BR"
     },
     {
       "id": "Ci9DQUlRQUNvZENodHljRjlvT21WRGMxWnVXVlZHVlVsa1dqTTRlbEJFUjJsYVRuYxAB",
@@ -296,15 +285,15 @@
       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WMlkyOXViVmwzTW5sYVkzbFZhRVpVU1dKMFZsRRAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOnV2Y29ubVl3MnlaY3lVaEZUSWJ0VlE%7C%7C?hl=pt-BR"
     },
     {
-      "id": "Ci9DQUlRQUNvZENodHljRjlvT25KUlQyUjRkMGRhZEdjMU5DMDNjM2hrTVdKTFMxRRAB",
-      "author": "Hellen Morás de Andrade",
-      "authorPhoto": "https://lh3.googleusercontent.com/a/ACg8ocLBhB8p84SC3YiHgZapr9pUgYF2SCi2480_G5rGP45hkpgEvA=s120-c-rp-mo-br100",
-      "authorLink": "https://www.google.com/maps/contrib/107900724411043610875?hl=pt-BR",
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxWk1EUjZiRzV2U0ZCc2JYcGxURGhhU0RBMk5rRRAB",
+      "author": "Ana Carolina Da Silva",
+      "authorPhoto": "https://lh3.googleusercontent.com/a-/ALV-UjXtYpMA0eq_rmCHl25rMz_JgX93HrOPpqWhLLwHjBkjNBdVaLMu=s120-c-rp-mo-br100",
+      "authorLink": "https://www.google.com/maps/contrib/105526507229421302952?hl=pt-BR",
       "isLocalGuide": false,
       "rating": 5,
-      "relativeDate": "11 meses atrás",
-      "text": "Nossas meninas são tudo na nossa vida, elas amaaam a Tia Fê e o Tio André e nós viajamos tranquilos, aproveitamos muito mais tendo a certeza de que elas estão sendo bem cuidadas, alimentadas e brincando muuuuito!! Inclusive uma das nossas gatas é bem pouco sociável mas adora brincar com a Fernanda e o André, super recomendo!",
-      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KUlQyUjRkMGRhZEdjMU5DMDNjM2hrTVdKTFMxRRAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOnJRT2R4d0dadGc1NC03c3hkMWJLS1E%7C%7C?hl=pt-BR"
+      "relativeDate": "3 meses atrás",
+      "text": "Muito atenciosos, cuidadosos e caprichosos!  Sempre manando fotos e vídeos dos gatinhos. Os gatos amaram, mesmo sendo ariscos saíram para interagir. Super recomendo! ♥️",
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxWk1EUjZiRzV2U0ZCc2JYcGxURGhhU0RBMk5rRRAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOi1ZMDR6bG5vSFBsbXplTDhaSDA2NkE%7C%7C?hl=pt-BR"
     },
     {
       "id": "ChdDSUhNMG9nS0VNQ00yYXZvLV9YbWdnRRAB",
@@ -329,15 +318,26 @@
       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VLYmxfN0xIclBINGxRRRAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CIHM0ogKEKbl_7LHrPH4lQE%7C%7C?hl=pt-BR"
     },
     {
-      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xGclNtMDFSV3BRZDJsbldUQmpXRWR4T0ZRd09WRRAB",
-      "author": "Lucila Cândida Oliveira do Nascimento",
-      "authorPhoto": "https://lh3.googleusercontent.com/a-/ALV-UjVEt4HskVAHrEIujry-WM4qMWhH_0zWcDdKuiBQKR025uUn2_9D=s120-c-rp-mo-ba12-br100",
-      "authorLink": "https://www.google.com/maps/contrib/100701461107306410091?hl=pt-BR",
+      "id": null,
+      "author": "Cliente do Google",
+      "authorPhoto": null,
+      "authorLink": null,
       "isLocalGuide": false,
-      "rating": 5,
-      "relativeDate": "11 meses atrás",
-      "text": "A Fernanda é uma pessoa que busca conhecimento de tudo aquilo que ela se dedica a fazer. Ela já amava animais e vi o amor por gatinhos nascendo nela e virando interesse, curiosidade, dedicação e atenção!\nApesar de viver com meus gatinhos por 12 anos, vejo ela trazendo informações e sugestões novas sempre! Não há ninguém que eu confie mais para cuidar atenciosamente e com alegria como ela e, claro, o André que também é super atencioso e amoroso com os animais.\nSe quer alguém alto astral e que tenha atenção, seriedade e dedicação para cuidar de seus companheiros de 4 patas, esse alguém são eles dois!",
-      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xGclNtMDFSV3BRZDJsbldUQmpXRWR4T0ZRd09WRRAB!2m1!1s0x0:0x6b1ef55d63a642e2!3m1!1s2@1:CAIQACodChtycF9oOlFrSm01RWpQd2lnWTBjWEdxOFQwOVE%7C%7C?hl=pt-BR"
+      "rating": null,
+      "relativeDate": null,
+      "text": "",
+      "link": null
+    },
+    {
+      "id": null,
+      "author": "Cliente do Google",
+      "authorPhoto": null,
+      "authorLink": null,
+      "isLocalGuide": false,
+      "rating": null,
+      "relativeDate": null,
+      "text": "",
+      "link": null
     }
   ]
 }
