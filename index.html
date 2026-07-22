@@ -269,18 +269,43 @@
             <p class="certificates-subtitle">Nosso carinho pelos gatos é apoiado por formação e conhecimento técnico.</p>
             <div class="certificates-grid">
                 <article class="certificate-card">
-                    <img src="images/GATOLOGIA-SELO.png" alt="Selo de certificação oficial em Gatologia, especialista certificada" width="300" height="300" loading="lazy">
+                    <button type="button" class="certificate-trigger" aria-haspopup="dialog" aria-controls="cert-modal-gatologia" data-modal-target="cert-modal-gatologia">
+                        <img src="images/GATOLOGIA-SELO.png" alt="Selo de certificação oficial em Gatologia, especialista certificada" width="300" height="300" loading="lazy">
+                        <span class="certificate-view-hint">🔍 Ver certificado</span>
+                    </button>
                     <h3 class="certificate-name">🎓 Certificação em Gatologia</h3>
                     <p class="certificate-info">Gatologia – Instituto Felicidade Animal – 2023</p>
                 </article>
                 <article class="certificate-card">
-                    <img src="images/JL-SELO.png" alt="Selo de certificado de qualificação como Auxiliar Veterinário Técnico, emitido pela JL Escola" width="300" height="300" loading="lazy">
+                    <button type="button" class="certificate-trigger" aria-haspopup="dialog" aria-controls="cert-modal-vet" data-modal-target="cert-modal-vet">
+                        <img src="images/JL-SELO.png" alt="Selo de certificado de qualificação como Auxiliar Veterinário Técnico, emitido pela JL Escola" width="300" height="300" loading="lazy">
+                        <span class="certificate-view-hint">🔍 Ver certificado</span>
+                    </button>
                     <h3 class="certificate-name">🩺 Auxiliar Veterinário</h3>
                     <p class="certificate-info">JL Escola · 2026</p>
                 </article>
             </div>
         </div>
     </section>
+
+    <!-- Certificate Modals -->
+    <div class="certificate-modal" id="cert-modal-gatologia" role="dialog" aria-modal="true" aria-labelledby="cert-modal-gatologia-title" hidden>
+        <div class="certificate-modal-backdrop" data-modal-close></div>
+        <div class="certificate-modal-content">
+            <button type="button" class="certificate-modal-close" aria-label="Fechar certificado" data-modal-close>&times;</button>
+            <img src="images/GatologiaCertificado.jpeg" alt="Certificado de conclusão do curso de Gatologia emitido para Fernanda Wartha Hass pelo Instituto Felicidade Animal, com mais de 60 horas de aulas concluídas" width="1100" height="773" loading="lazy">
+            <p id="cert-modal-gatologia-title" class="certificate-modal-caption">Certificado de Gatologia — Instituto Felicidade Animal, 2023</p>
+        </div>
+    </div>
+
+    <div class="certificate-modal" id="cert-modal-vet" role="dialog" aria-modal="true" aria-labelledby="cert-modal-vet-title" hidden>
+        <div class="certificate-modal-backdrop" data-modal-close></div>
+        <div class="certificate-modal-content">
+            <button type="button" class="certificate-modal-close" aria-label="Fechar certificado" data-modal-close>&times;</button>
+            <img src="images/AuxVeterinarioCertificado.jpeg" alt="Certificado de qualificação como Auxiliar Veterinário Técnico emitido para Fernanda Aguiar Wartha Hass pela JL Escola" width="1100" height="825" loading="lazy">
+            <p id="cert-modal-vet-title" class="certificate-modal-caption">Certificado de Auxiliar Veterinário — JL Escola, 2026</p>
+        </div>
+    </div>
 
     <div class="section-divider"></div>
 
