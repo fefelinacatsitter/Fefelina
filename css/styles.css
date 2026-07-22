@@ -368,6 +368,14 @@ body {
     transform: translateY(0);
 }
 
+/* Touch devices have no hover state, so keep the hint always visible there */
+@media (hover: none) {
+    .certificate-view-hint {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .certificate-trigger:focus-visible {
     outline: 3px solid var(--color-lilac-vivid);
     outline-offset: 4px;
