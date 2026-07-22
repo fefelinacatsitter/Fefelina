@@ -46,4 +46,60 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Certificate modal (lightbox)
+    let lastFocusedElement = null;
+
+    function openCertificateModal(modal) {
+        lastFocusedElement = document.activeElement;
+        modal.hidden = false;
+        document.body.style.overflow = 'hidden';
+        const closeBtn = modal.querySelector('.certificate-modal-close');
+        if (closeBtn) closeBtn.focus();
+        document.addEventListener('keydown', handleModalKeydown);
+    }
+
+    function closeCertificateModal(modal) {
+        modal.hidden = true;
+        document.body.style.overflow = '';
+        document.removeEventListener('keydown', handleModalKeydown);
+        if (lastFocusedElement) lastFocusedElement.focus();
+    }
+
+    function handleModalKeydown(e) {
+        const openModal = document.querySelector('.certificate-modal:not([hidden])');
+        if (!openModal) return;
+
+        if (e.key === 'Escape') {
+            closeCertificateModal(openModal);
+            return;
+        }
+
+        if (e.key === 'Tab') {
+            const focusable = openModal.querySelectorAll('button, [href], img');
+            const first = focusable[0];
+            const last = focusable[focusable.length - 1];
+            if (e.shiftKey && document.activeElement === first) {
+                e.preventDefault();
+                last.focus();
+            } else if (!e.shiftKey && document.activeElement === last) {
+                e.preventDefault();
+                first.focus();
+            }
+        }
+    }
+
+    document.querySelectorAll('.certificate-trigger').forEach(trigger => {
+        trigger.addEventListener('click', function() {
+            const modal = document.getElementById(this.dataset.modalTarget);
+            if (modal) openCertificateModal(modal);
+        });
+    });
+
+    document.querySelectorAll('.certificate-modal [data-modal-close]').forEach(closeEl => {
+        closeEl.addEventListener('click', function() {
+            const modal = this.closest('.certificate-modal');
+            if (modal) closeCertificateModal(modal);
+        });
+    });
+
 });

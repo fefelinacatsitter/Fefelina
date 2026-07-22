@@ -292,6 +292,194 @@ body {
     font-weight: 600;
 }
 
+/* Certificates Section */
+.certificates-section {
+    background: linear-gradient(135deg, var(--color-peach-soft) 0%, var(--color-lilac-soft) 100%);
+}
+
+.certificates-subtitle {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: var(--color-ink);
+    margin-top: -20px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(260px, 340px));
+    justify-content: center;
+    gap: 30px;
+}
+
+.certificate-card {
+    text-align: center;
+    padding: 10px 20px;
+    transition: transform 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-8px);
+}
+
+.certificate-trigger {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0 auto 20px auto;
+    cursor: pointer;
+    font: inherit;
+}
+
+.certificate-trigger img {
+    max-width: 160px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    filter: drop-shadow(0 10px 18px rgba(35, 31, 43, 0.18));
+    transition: filter 0.3s ease;
+}
+
+.certificate-trigger:hover img,
+.certificate-trigger:focus-visible img {
+    filter: drop-shadow(0 10px 18px rgba(35, 31, 43, 0.28));
+}
+
+.certificate-view-hint {
+    display: block;
+    margin-top: 8px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-peach-dark);
+    opacity: 0;
+    transform: translateY(-4px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.certificate-trigger:hover .certificate-view-hint,
+.certificate-trigger:focus-visible .certificate-view-hint {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Touch devices have no hover state, so keep the hint always visible there */
+@media (hover: none) {
+    .certificate-view-hint {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.certificate-trigger:focus-visible {
+    outline: 3px solid var(--color-lilac-vivid);
+    outline-offset: 4px;
+    border-radius: 8px;
+}
+
+.certificate-name {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-ink);
+    margin-bottom: 10px;
+}
+
+.certificate-info {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Certificate Modal */
+.certificate-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.certificate-modal[hidden] {
+    display: none;
+}
+
+.certificate-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(35, 31, 43, 0.75);
+}
+
+.certificate-modal-content {
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: min(600px, 90vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+    text-align: center;
+}
+
+.certificate-modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.certificate-modal-caption {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: var(--color-ink);
+    margin-top: 14px;
+}
+
+.certificate-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: var(--color-lilac-soft);
+    color: var(--color-ink);
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.certificate-modal-close:hover,
+.certificate-modal-close:focus-visible {
+    background-color: var(--color-lilac-vivid);
+    color: #FFFFFF;
+}
+
+.certificate-modal-close:focus-visible {
+    outline: 3px solid var(--color-peach-dark);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .certificate-modal-content {
+        animation: hero-fade-in 0.25s ease both;
+    }
+}
+
 /* Services Section */
 .services-section {
     background-color: #fff;
@@ -1100,6 +1288,12 @@ body {
 @media (max-width: 768px) {
     .header-logo {
         max-width: 150px;
+    }
+
+    .certificates-grid {
+        grid-template-columns: 1fr;
+        max-width: 340px;
+        margin: 0 auto;
     }
 
     .hero-section {
