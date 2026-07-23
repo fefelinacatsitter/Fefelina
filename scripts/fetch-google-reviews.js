@@ -26,8 +26,10 @@ const SERPAPI_ENDPOINT = 'https://serpapi.com/search.json';
 const OUTPUT_PATH = path.join(__dirname, '..', 'data', 'reviews.json');
 // A API sempre retorna 8 avaliações na primeira página; para trazer mais é
 // preciso paginar usando next_page_token (serpapi_pagination.next_page_token).
-const MAX_REVIEWS = 30;
-const MAX_PAGES = 4;
+// Mantemos uma folga acima do total atual de avaliações para não cortar
+// avaliações novas antes da próxima sincronização.
+const MAX_REVIEWS = 100;
+const MAX_PAGES = 8;
 
 // data_id do perfil "Fefelina Cat Sitter" no Google Maps.
 // Não é um dado sensível (é apenas um identificador público de local),
