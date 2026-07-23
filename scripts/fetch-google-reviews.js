@@ -194,6 +194,12 @@ async function main() {
     let mapsUrl = null;
     let nextPageToken = null;
     let page = 0;
+    // Quando todas as avaliações já foram percorridas, a SerpApi pode
+    // continuar retornando next_page_token e repetir avaliações já vistas
+    // (wrap-around). Deduplicamos por review_id e paramos assim que uma
+    // página não trouxer nenhuma avaliação nova, evitando duplicatas e
+    // quebra na ordem cronológica (mais recentes primeiro).
+    const seenReviewIds = new Set();
 
     do {
         const json = await fetchReviewsPage(apiKey, dataId, nextPageToken);
@@ -203,12 +209,26 @@ async function main() {
             mapsUrl = json.search_metadata?.google_maps_reviews_url || null;
         }
 
+        let newReviewsCount = 0;
         if (Array.isArray(json.reviews)) {
-            allReviews = allReviews.concat(json.reviews);
+            for (const review of json.reviews) {
+                const key = review.review_id || `${review.user?.name || ''}|${review.date || ''}|${review.snippet || ''}`;
+                if (seenReviewIds.has(key)) {
+                    continue;
+                }
+                seenReviewIds.add(key);
+                allReviews.push(review);
+                newReviewsCount += 1;
+            }
         }
 
         nextPageToken = json.serpapi_pagination?.next_page_token || null;
         page += 1;
+
+        if (newReviewsCount === 0) {
+            // Página inteira já vista: chegamos ao fim das avaliações reais.
+            break;
+        }
     } while (nextPageToken && allReviews.length < MAX_REVIEWS && page < MAX_PAGES);
 
     const reviews = allReviews.slice(0, MAX_REVIEWS).map(mapReview);
